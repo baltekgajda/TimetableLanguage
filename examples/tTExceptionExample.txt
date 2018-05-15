@@ -1,0 +1,3 @@
+Integer listInteger=2;
+forEach(Timetable t : listInteger.listAll())
+print("Fitness: " + t.getFitness());

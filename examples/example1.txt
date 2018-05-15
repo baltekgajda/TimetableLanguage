@@ -1,0 +1,12 @@
+TimetableData timetableData = openTTData("ax123");
+Integer fitness = 25;
+Timetable bestTimetable;
+
+forEach(Timetable t: timetableData.listAll())
+    {
+        if(t.getFitness()> fitness)
+          t.genPDF();
+        print("Fitness: " + t.getFitness());
+    }
+
+#generating timetables if fitness is greater than 25

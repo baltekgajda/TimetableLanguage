@@ -1,0 +1,5 @@
+Integer i;
+i=10;
+i=(i-10);
+Integer j=i;
+Integer j=j;

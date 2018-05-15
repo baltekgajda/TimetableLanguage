@@ -1,0 +1,3 @@
+Integer i;
+if(i>2)
+    print("Error");

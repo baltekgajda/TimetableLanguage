@@ -1,0 +1,63 @@
+TimetableData t1 = openTTData("a");
+TimetableData t2 = openTTData("b");
+Integer i1 = 2;
+Integer i2 = 17;
+String s1 = "Bob";
+String s2 = "Tom";
+
+if(i1==i2)
+    print("Equal integers never print");
+if(i1!=i2)
+    print("Not equal integers");
+
+if(i1==i2 or i1!=i2)
+    print("Always true");
+
+if(i1==i2 and i1!=i2 or 1==1)
+    print("Always true");
+
+Integer i3=(i1+i2);
+Integer i4=(i1-i2);
+Integer i5=(i1*i2);
+Integer i6=(i1/i2);
+print("i3= "+i3+" i4= "+i4+" i5= "+i5+" i6= "+i6);
+if(i1==(1+1))
+    print("Should be true");
+
+Integer i7 = (((i1+i2)*2)+i4);
+
+if(i7!=23)
+print("true");
+else
+{
+if(i7==23)
+    print("nested true");
+}
+
+Integer iterator=20;
+while(iterator<=i7)
+{
+    print("Iterator value: " + iterator);
+    iterator=(iterator+1);
+}
+
+Timetable tt1 = t1.genTimetable(1);
+Timetable tt2 = t1.genTimetable(1,3);
+Timetable tt3 = t1.genTimetable(1,17,3);
+
+forEach(Timetable t : t1.listAll())
+    print("Fitness: "+ t.getFitness());
+print("Classrooms: "+ t1.getClassroomCount());
+
+tt2.printStats();
+t2.printDataStats();
+tt3.genPDF();
+
+
+
+
+
+
+
+
+

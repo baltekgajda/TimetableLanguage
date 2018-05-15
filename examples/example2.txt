@@ -1,0 +1,12 @@
+#program used to generate timetables with given parameters
+#also printing stats
+TimetableData ttdata = openTTData("qt53V");
+print("TimetableData file opened. Number od classrooms: " + ttdata.getClassroomCount());
+Integer i=10;
+Timetable temp;
+while(i>=0)
+{
+    temp = ttdata.genTimetable(2);
+    temp.printStats();
+    i=(i-1);
+}

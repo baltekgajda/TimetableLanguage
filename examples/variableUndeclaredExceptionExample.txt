@@ -1,0 +1,3 @@
+String string = "Some text";
+Integer integer = 22;
+print(string+integer+error);

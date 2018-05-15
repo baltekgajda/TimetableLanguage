@@ -1,0 +1,9 @@
+#program used to test math expressions
+
+Integer a = 2;
+Integer b = 3;
+b=(a*2);
+b=(((b*b)*2)*(3*a));
+TimetableData timetableData = openTTData("1hs3");
+Timetable timetable = timetableData.genTimetable(2,7,3);
+print("wynik: "+b+" "+"fitness funkcji: "+timetable.getFitness());
