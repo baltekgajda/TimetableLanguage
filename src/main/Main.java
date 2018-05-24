@@ -1,18 +1,15 @@
 package main;
 
 import main.lexerParser.TTVisitor;
-import main.lexerParser.gen.*;
-import org.antlr.v4.gui.TreeViewer;
+import main.lexerParser.gen.ttLexer;
+import main.lexerParser.gen.ttParser;
 import org.antlr.v4.runtime.*;
 
-import javax.swing.*;
 import java.io.IOException;
-import java.util.Arrays;
 
 public class Main {
 
-    public static void main(String [] args) throws IOException
-    {
+    public static void main(String[] args) throws IOException {
         CharStream charStream = CharStreams.fromFileName("C:\\Users\\bartl\\git\\TimetableLanguage\\examples\\example4.txt");
         ttLexer ttlexer = new ttLexer(charStream);
         TokenSource tokenSource = new ListTokenSource(ttlexer.getAllTokens());
