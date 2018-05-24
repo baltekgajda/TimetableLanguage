@@ -10,7 +10,7 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        CharStream charStream = CharStreams.fromFileName("C:\\Users\\bartl\\git\\TimetableLanguage\\examples\\example4.txt");
+        CharStream charStream = CharStreams.fromFileName("examples\\example4.txt");
         ttLexer ttlexer = new ttLexer(charStream);
         TokenSource tokenSource = new ListTokenSource(ttlexer.getAllTokens());
         TokenStream tokenStream = new CommonTokenStream(tokenSource);
